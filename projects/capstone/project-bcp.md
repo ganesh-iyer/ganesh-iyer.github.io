@@ -99,7 +99,7 @@ here
 * I had also prepared the entire working prototype on Axure Pro and also **prepared the task scripts for the user tests**.
 <br /><br />
 
-**Key Insights:**
+**Other Insights:**
 
 * This was the first major redesign project that I had worked on and the key challenge here was iterating under tight deadlines. It was also an important learning experience deciding **when to keep exploring ideas and when to converge onto a single concept**.
 

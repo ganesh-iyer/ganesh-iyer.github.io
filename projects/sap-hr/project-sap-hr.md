@@ -3,16 +3,20 @@ layout: project
 title: SAP HR Administrator Dashboard
 permalink: /projects/sap-hr/
 ---
-**Brief:** Design dashboard UI and work flows that cater to the various roles of an HR Professional and/or HR Administrator.
-
-**Platform:** Web clients for tablet and desktop. Unlike the SAP ESS and MSS products, our target users perform their functions in a desktop device.
-
-**Duration:** March 2012 to April 2013
+<div class = "key-insight">
+<h3 class = "key-insight">Key Insight</h3>
+This was one of the projects where I used my knowledge in HTML and CSS to resolve UI issues quickly during developer demos.
+</div>
+<br />
 
 ![SAP HR Admin Dashboard - High Fidelity Prototype]({{ site.baseurl}}/projects/sap-hr/saphr-hifi.png)
 <span class = "figure-description">
 **Fig:** A screenshot of the final prototype of the dashboard.
 </span><br /><br />
+
+**Brief:** Design dashboard UI and work flows that cater to the various roles of an HR Professional and/or HR Administrator.
+
+**Platform:** Web clients for tablet and desktop. Unlike the SAP ESS and MSS products, our target users perform their functions in a desktop device.
 
 **Project Background:** The HR Administrator has a set of functions - tasks, processes, actions, discussions, organization, analytics and search - which are to be within quick reach as he signs in for the day.
 
@@ -25,9 +29,7 @@ The main challenge was that since this was an incremental release for the HR Adm
 **Fig:** Tasks can be viewed in two ways (priority and urgency) - this switcher was a new addition to the dashboard design.
 </span><br /><br />
 
-**Process:**
-
-The final visual design of the project was the outcome of a rigorous Design Thinking workshop for a dashboard design which targeted
+**Process:** The final visual design of the project was the outcome of a rigorous Design Thinking workshop for a dashboard design which targeted
 <a href="http://www.sap.com/solution/lob/hr/software/manager-self-service/index.html" class="underlined-link" target= "blank">
 Managers (MSS)
 <span class="fa fa-external-link no-underline"></span></a> and <a href="http://www.sap.com/solution/lob/hr/software/employee-self-service/index.html" class="underlined-link" target= "blank">
@@ -66,19 +68,10 @@ Employees (ESS)
 **Fig:** An intermediate proposal where the next-level actions of components are included in the dashboard page itself.
 </span><br /><br />
 
-**Key Insights:**
+**Other Insights:** In addition to leading the design for the HR Admin team, I had to also establish consistency with the newer ESS and MSS teams. While the newer teams had greater flexibility in terms of design expression, straying away drastically from the design of our recent release was out of the question for us. The constant communication required to make design compromises was painstaking, but invaluable.
 
-* In addition to leading the design for the HR Admin team, I had to also establish consistency with the newer ESS and MSS teams. While the newer teams had greater flexibility in terms of design expression, straying away drastically from the design of our recent release was out of the question for us. The constant communication required to make design compromises was painstaking, but invaluable.
-
-* This was one of the projects where I used my knowledge in HTML and CSS to resolve UI issues quickly during developer demos.
 <br /><br />
 
-**Product Owner Feedback:**
-
-> Ganesh's approach is iterative and methodic and was an excellent fit for our scrum team. He holds regular
-consultation with me, the architects, the development and the quality assessment team and is able to
-provide workarounds at short notice at every stage of the project.
-
-\- Vijaya Sarathi Durvasula, Product Owner for SAP HCM.
+**Project Duration:** March 2012 to April 2013
 <br /><br />
 <br /><br />
