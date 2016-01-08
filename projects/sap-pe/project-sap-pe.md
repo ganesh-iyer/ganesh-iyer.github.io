@@ -3,6 +3,17 @@ layout: project
 title: SAP Project Execution
 permalink: /projects/sap-pe/
 ---
+<div class = "key-insight">
+<h3 class = "key-insight">Key Insight</h3>
+The synthesis stage of the Design Thinking was a very efficient platform to bring together visions of the product from the perspectives of managers, developers, architects and product owners and how they would have done things differently.
+</div>
+<br />
+
+![SAP Project Execution - High Fidelity Prototype]({{ site.baseurl}}/projects/sap-pe/sappe-hifi.png)
+<span class = "figure-description">
+**Fig:** A screenshot of the final prototype of the application that tracks the progress of the project.
+</span><br /><br />
+
 **Brief:** Design a
 <a href="http://sapcampaigns.de/suiteonhana/#project-execution" class="underlined-link" target= "blank">
 family of applications
@@ -11,24 +22,14 @@ for a Project Manager that allows him to monitor and regulate scheduling, logist
 
 **Platform:** Web client responsive across tablets, smartphones (iOS and Android) and PC.
 
-**Duration:** April 2013 to April 2014 *(last working day)*
-
-![SAP Project Execution - High Fidelity Prototype]({{ site.baseurl}}/projects/sap-pe/sappe-hifi.png)
-<span class = "figure-description">
-**Fig:** A screenshot of the final prototype of the application that tracks the progress of the project.
-</span><br /><br />
-
-**Project Background:**
-The entire Project Execution product was modularized into 20 applications that each cater to a single use-case within either scheduling, logistics or revenue. By having mobilized each use-case into an app, the dashboard for the product can be split up into individual key performance indicators from each application that would also serve as a portal into that respective application. A similar structure was also being developed for other products.
+**Project Background:** The entire Project Execution product was modularized into 20 applications that each cater to a single use-case within either scheduling, logistics or revenue. By having mobilized each use-case into an app, the dashboard for the product can be split up into individual key performance indicators from each application that would also serve as a portal into that respective application. A similar structure was also being developed for other products.
 
 ![SAP Project Execution - Earlier Mockups]({{ site.baseurl}}/projects/sap-pe/sappe-early.png)
 <span class = "figure-description">
 **Fig:** One of our early visualization solutions for the use-case that lists project milestones.
 </span><br /><br />
 
-**Process:**
-
-The use-cases were divided among the UX team and concepts were aligned to match the product vision as well as adhere to an overriding central UI guideline library. The applications shown here were the use-cases that *I* had worked upon from ideation to high-fidelity prototypes. The prototypes were made in *Adobe Illustrator*.
+**Process:** The use-cases were divided among the UX team and concepts were aligned to match the product vision as well as adhere to an overriding central UI guideline library. The applications shown here were the use-cases that *I* had worked upon from ideation to high-fidelity prototypes. The prototypes were made in *Adobe Illustrator*.
 
 ![SAP Project Execution - Brainstorming sketch for Project Progress Application]({{ site.baseurl}}/projects/sap-pe/sappe-ppsketch.png)
 <span class = "figure-description">
@@ -67,13 +68,11 @@ We had also performed a rigorous design thinking process wherein my teammate was
 * Translated synthesis of customer feedback into proofs of concepts for future releases.
 <br /><br />
 
-**Key Insights:**
+**Other Insights:**
 
 * Despite its long development lifecycle, my teammate and I worked in an intensive agile work environment owing to radical UI changes, while, at the same time designing for future releases that incorporate customer feedback. This was a major source of design dilemmas.
 
-* At times, it was difficult to understand if a user's understanding of terminologies and models from an old interface was considered worthy to retain in a newer design. While newer interpretations on paper could have been better, this was not established through user-testing.
-
-* The synthesis stage of the Design Thinking was a very efficient platform to bring together visions of the product from the perspectives of managers, developers, architects and product owners and how they would have done things differently.
+* At times, it was difficult to understand if a user's acceptance of terminologies and models from an old interface was considered worthy to retain in a newer design. While newer interpretations on paper could have been better, this was not established through user-testing.
 <br /><br />
 
 **Product Owner Feedback:**
@@ -81,5 +80,7 @@ We had also performed a rigorous design thinking process wherein my teammate was
 > Ganesh has proven his ability to quickly understand the business context and use case and to turn rather fuzzy ideas and requirements into concrete and well structured ideas for visualisation and navigation. He made sure to focus on simplicity and usability without dropping any of the mandatory features. Ganesh took full responsibility for his tasks and work while staying an agile team player at the same time.
 
 \- Harry Lube, Chief Product Owner of SAP Project Execution.
+<br /><br />
+**Project Duration:** April 2013 to April 2014 *(last working day)*
 <br /><br />
 <br /><br />
