@@ -1,8 +1,146 @@
-<html>
-<title>Ganesh Viswanathan | Product Designer</title>
-<body>
-	<p>Hello, currently I'm working on a new design for my website.</p>
-	<p>Sorry for the inconvenience.</p>
-	<p>In the meantime, please find attached my <a href ="GaneshResume.pdf" target ="_blank">resume</a> and <a href ="GaneshSelectedWorks.pdf" target ="_blank">work samples</a>.</p>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+<!-- Illustration goes here -->
+  <div class = "headline">
+    <span class="sub-headline-emph">Hello! My name is Ganesh and</span><br />
+    <span class = "big-and-bold">I'm a Product Designer</span><br />
+    <span class = "sub-headline-emph">based out of the Bay Area.</span><br /></br>
+    Through a user-centered design process, I strive to design products that constrain and free the user in
+    <span class = "headline-emph">all</span>
+    the right places.<br /><br />
+    <a class = "link-emph" href="GaneshResume.pdf" target="_blank">
+    <span class = "underlined-link">Download Resume</span>
+    <span class="fa fa-file-pdf-o"></span></a>
+    <!-- <span class = "sub-headline">Download
+    <a class = "link-emph" href="#" target="_blank">
+    <span class = "underlined-link">resume</span>
+    <span class="fa fa-file-pdf-o"></span></a> and
+    <a class = "link-emph" href="#" target="_blank">
+    <span class = "underlined-link">portfolio</span>
+    <span class="fa fa-file-pdf-o"></span></a>. -->
+  </div>
+<hr />
+<div class = "main-body">
+  <div class = "current-projects">
+    <h2 class = "page-heading">Featured Work</h2>
+    <!-- Space for Main Project -->
+    <div id="owl-demo" class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="{{ site.baseurl }}/images/pippop-tn.png" alt="PipPop" />
+        <div class = "blurb">
+          <h3>PipPop: Making interpersonal exchange of information more seamless</h3>
+          <p>In this project, we, a team of 4, followed a user-centered design approach
+            to explore why current methods of exchanging contact information are not as rich as they
+            could be and prototyped a novel solution driven by that approach.
+          <a href ="{{ site.baseurl }}/projects/pippop/" class = "underlined-link">read more...</a>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="{{ site.baseurl }}/images/tor-tn.png" alt="Tor" />
+        <div class = "blurb">
+          <h3>Redesigning the Tor Configuration Flow</h3>
+          <p>This was my first time working in the field of usability in security. This project involves redesigning
+            the configuration of the Tor Browser network settings so that the user's anonymous browsing experience
+            is safeguarded.
+          <a href ="{{ site.baseurl }}/projects/tor/" class = "underlined-link">read more...</a>
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="{{ site.baseurl }}/images/sappe-tn.png" alt="Project Systems on HANA" />
+        <div class = "blurb">
+          <h3>SAP Project Execution</h3>
+          <p>Co-designed the responsive UIs for SAP's Project Execution product which included a set of over 20 applications
+            that help a project manager to monitor scheduling, logistics and the financial aspects of her project(s).
+          <a href ="{{ site.baseurl }}/projects/sap-pe/" class = "underlined-link">read more...</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <br />
+    <a class = "underlined-link" href="">View all projects</a>
+  </div>
+  <hr />
+  {% if posts %}
+  <div>
+    <h2 class = 'page-heading'>Recently Blogged</h2>
+    <ul class = "home-blog-list">
+      {% for post in site.posts %}
+        <li>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+          <!-- Brief project description -->
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <hr />
+  {% endif %}
+  <div>
+    <h2 class = 'page-heading'>Testimonials</h2>
+    <blockquote>
+      "The high quality of his mockups were crucial to the project and Ganesh
+      responded quickly to the changes discussed in online meetings with the
+      design sensibilities we needed to move the team in the right direction."
+    </blockquote>
+    <p>- Dale Henderson, Cellist and Founder of
+      <a class ="underlined-link"href="{{ site.baseurl }}/projects/bach/" target="_blank">
+        Bach in the Subways</a>.
+      <br /><br />
+
+    <blockquote>
+      "Ganesh has proven his ability to quickly understand the business context
+      and use case and to turn rather fuzzy ideas and requirements into concrete
+      and well structured ideas for visualisation and navigation."
+    </blockquote>
+    <p>- Harry Lube, Chief Product Owner of
+      <a class ="underlined-link"href="{{ site.baseurl }}/projects/sap-pe/" target="_blank">
+        SAP Project Execution</a>.
+      <br /><br />
+  </div>
+  <hr />
+  <div class ="blurb">
+    <h2 class ="page-heading">Get in touch</h2>
+    I'm currently available for UX design roles in a contract capacity. I'm also comfortable working remotely.<br /><br />
+    I'm also on the lookout for Product Design internships for the summer of 2016
+    at a place where I can use my new design full-stack skills to create a positive social impact.<br /><br />
+    Let's<a class ="underlined-link" href="mailto:info@ganeshviswanathan.com?subject=Hello!">
+    talk <span class="fa fa-envelope-o"></span></a> !
+    <br /><br />
+
+  <!-- <h1 class="page-heading">Blog</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul> -->
+</div>
+  <!-- <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post py3">
+        <p class="post-meta">{{ post.date | date: site.date_format }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+        <p class="post-summary">
+          {% if post.summary %}
+            {{ post.summary }}
+          {% else %}
+            {{ post.excerpt }}
+          {% endif %}
+        </p>
+      </div>
+    {% endfor %}
+  </div> -->
+</div>

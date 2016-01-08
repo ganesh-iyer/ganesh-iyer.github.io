@@ -1,0 +1,51 @@
+<footer class = 'center'>
+  <div class = "footer-logo">
+    <img src ="/images/logo.png" height = "60" alt="" />
+  </div>
+  <div class = 'social-media'>
+    <div class='social-icons'>
+      <!-- <div class="social-icons-right"> -->
+        <!-- After you get blog up and running -->
+        <!-- <a class="fa fa-rss" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a> -->
+
+        {% if site.email %}
+          <a class="fa fa-envelope" href="mailto:{{ site.email }}"></a>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <a class="fa fa-linkedin" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target ='_blank'></a>
+        {% endif %}
+        {% if site.angellist_username %}
+          <a class="fa fa-angellist" href="https://angel.co/{{ site.angellist_username }}" target ='_blank'></a>
+        {% endif %}
+        {% if site.twitter_username %}
+          <a class="fa fa-twitter" href="https://twitter.com/{{ site.twitter_username }}" target ='_blank'></a>
+        {% endif %}
+          <a class="fa fa-university" href="http://www.ischool.berkeley.edu/people/students/ganeshviswanathaniyer" target ='_blank'></a>
+      <!-- </div> -->
+      <div class="right">
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <small>
+    Hyde theme inspired by <a href="http://johnotander.com" target ='_blank'>John Otander</a>'s <a href="https://github.com/johnotander/pixyll" target ='_blank'>Pixyll</a>.<br>
+    Powered by <a href="http://www.jekyllrb.com" target ='_blank'>Jekyll</a>.
+    &lt;/&gt; available on my <a href="https://github.com/ganesh-iyer.github.io" target ='_blank'>Github</a>.
+    <br /><br />
+    Fonts: <a href="http://www.fontsquirrel.com/fonts/roboto" target = "_blank">
+    Roboto and Roboto Condensed</a> courtesy
+    <a href ="http://www.fontsquirrel.com/fonts/list/foundry/christian-robertson" target = "_blank">
+    Christian Robertson</a> and <br />
+    <a href ="https://fortawesome.github.io/Font-Awesome/" target = "_blank">Font Awesome</a> by
+    <a href ="http://twitter.com/davegandy" target = "_blank">Dave Gandy</a>.
+    <br />
+    Carousel from <a href ="http://owlgraphic.com/owlcarousel/" target="_blank">
+      jQuery Owl Carousel</a> by
+      <a href="http://owlgraphic.com/" target ="_blank">Bartosz Wojciechowski</a>.
+    <br />
+    Contact form made functional by the folks at
+    <a href ="http://www.formspree.io/" target="_blank">Formspree</a>.
+    <br /><br />
+    &copy; 2015 Ganesh Viswanathan Iyer
+  </small>
+</footer>

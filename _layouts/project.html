@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="post-header mb2">
+  <h1 class = "project-text">{{ page.title }}</h1>
+</div>
+
+<article class="post-content">
+  {{ content }}
+</article>
+
+{% if site.show_sharing_icons %}
+  {% include share_buttons.html %}
+{% endif %}
+
+{% if site.show_post_footers %}
+  {% include post_footer.html %}
+{% endif %}

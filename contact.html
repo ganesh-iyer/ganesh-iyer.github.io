@@ -1,0 +1,64 @@
+---
+layout: page
+title: Say Hello!
+permalink: /contact/
+---
+
+<div class="py2">
+  {% if site.ajaxify_contact_form %}
+    <form class="form-stacked">
+      <input type="text" name="name" class="field-light" placeholder="Name">
+      <input type="text" name="email" class="field-light" placeholder="Email Address">
+      <textarea type="text" name="content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <button type='submit' class="button button-blue button-big mobile-block">Send</button>
+    </form>
+  {% else %}
+    <form action="https://formspree.io/{{ site.email }}" method="POST" class="form-stacked">
+      <input type="text" name="name" class="field-light" placeholder="Name">
+      <input type="text" name="email" class="field-light" placeholder="Email Address">
+      <textarea type="text" name="content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
+      <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
+      <input type="hidden" name="_subject" value="New submission!" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" class="button button-blue button-big mobile-block" value="Send">
+    </form>
+  {% endif %}
+</div>
+
+<div>
+  <!-- Design a layout for the resume page. -->
+  <!-- Design a layout for the portfolio page -->
+  <!-- Design a layout for the individual portfolio item page -->
+  <!-- Get menu working -->
+    <!-- Get various states of the menu working -->
+    <!-- align with logo -->
+    <!-- get logo to appear bigger -->
+    <!-- OPTIONAL: resize menu as you scroll down -->
+    <!-- OPTIONAL: retain menu as you scrol down -->
+    <!-- OPTIONAL: animate menu to show your various names -->
+  <!-- Clean up code you don't need -->
+    <!-- This includes making sure you have every mention of Pixyll OUT of the system -->
+    <!-- get rid of fonts you don't need -->
+    <!-- get rid of colors you don't need -->
+
+  <!-- Work on footer -->
+  <!-- Social media icons -->
+  <!-- Making it responsive -->
+    <!-- Sort out how the menu reacts when the page is crunched -->
+    <!-- Bootstrap it? -->
+  <!-- Get a good 404 design. Use Infinite Knot. -->
+  <!-- Get the pagination terminal error out --> <!-- SORTA SOLVED -->
+  <!-- Sort out Titles (on the browser tab) on every page -->
+  <!-- either alternate between different headline-text 's OR find a way to generate the
+  current one at random using a rand function -->
+  <!-- designation text in the header -->
+  <!-- remove posts -->
+
+</div>
+
+
+{% if site.ajaxify_contact_form %}
+  {% include ajaxify_content_form.html %}
+{% endif %}
