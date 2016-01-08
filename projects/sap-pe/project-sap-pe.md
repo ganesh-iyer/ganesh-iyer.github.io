@@ -22,7 +22,7 @@ for a Project Manager that allows him to monitor and regulate scheduling, logist
 
 **Platform:** Web client responsive across tablets, smartphones (iOS and Android) and PC.
 
-**Project Background:** The entire Project Execution product was modularized into 20 applications that each cater to a single use-case within either scheduling, logistics or revenue. By having mobilized each use-case into an app, the dashboard for the product can be split up into individual key performance indicators from each application that would also serve as a portal into that respective application. A similar structure was also being developed for other products.
+**Project Background:** The entire Project Execution product was modularized into 20 applications that each cater to a single use-case within either scheduling, logistics or revenue. By having mobilized each use-case into an app, the dashboard for the product can be split up into individual key performance indicators or KPIs from each application that would also serve as a portal into that respective application. A similar structure was also being developed for other products adhering to the new UI guidelines.
 
 ![SAP Project Execution - Earlier Mockups]({{ site.baseurl}}/projects/sap-pe/sappe-early.png)
 <span class = "figure-description">
@@ -36,7 +36,7 @@ for a Project Manager that allows him to monitor and regulate scheduling, logist
 **Fig:** Sketches to interpret and brainstorm flows for the use-case that tracks progress.
 </span><br /><br />
 
-We had also performed a rigorous design thinking process wherein my teammate was part of the usability moderation team with the product owners at the client locations while my development scrum master and I led the synthesis of the data collected in Bangalore.
+We had also performed a rigorous **design thinking process** wherein my teammate was part of the usability moderation team with the product owners at the client locations while my development scrum master and I led the synthesis of the data collected in Bangalore.
 
 ![SAP Project Execution - Intermediate Visualization for Overdue Activities]({{ site.baseurl}}/projects/sap-pe/sappe-interim.png)
 <span class = "figure-description">
@@ -59,11 +59,11 @@ We had also performed a rigorous design thinking process wherein my teammate was
 **Fig:** Led the Design Thinking analysis of customer feedback that was compiled by the offshore team at client locations.
 </span><br /><br />
 
-* Being one of the early frontrunners in adhering to the newly accepted central UI design guidelines, my teammate and I formulated UI control requirements based on use-cases relevant to our set of applications. Through discussions, we had then proposed UI solutions that could hold well in other sets of applications that were looking to adhere to this evolving library.
+* Being one of the early frontrunners in adhering to the newly accepted central UI design guidelines, my teammate and I formulated UI control requirements based on use-cases relevant to our set of applications. Through discussions, we had then **proposed UI solutions that could hold well in other sets of applications** that were looking to adhere to this evolving library.
 
 * Provided UI specs as well as tested the final implementations before every release.
 
-* Ensured that the mockups were adherent to the central UI library guidelines at all times through and for reference of other application families looking to comply.
+* Ensured that the **mockups were adherent to the central UI library guidelines** at all times through and for reference of other application families looking to comply.
 
 * Translated synthesis of customer feedback into proofs of concepts for future releases.
 <br /><br />
@@ -72,7 +72,7 @@ We had also performed a rigorous design thinking process wherein my teammate was
 
 * Despite its long development lifecycle, my teammate and I worked in an intensive agile work environment owing to radical UI changes, while, at the same time designing for future releases that incorporate customer feedback. This was a major source of design dilemmas.
 
-* At times, it was difficult to understand if a user's acceptance of terminologies and models from an old interface was considered worthy to retain in a newer design. While newer interpretations on paper could have been better, this was not established through user-testing.
+* At times, it was difficult to understand if a user's acceptance of terminologies and models from an old interface was considered *relevant* to retain in a newer design. While newer interpretations on paper could have been better, this was not established through user-testing.
 <br /><br />
 
 **Product Owner Feedback:**

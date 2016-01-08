@@ -63,7 +63,7 @@ While there already have been technological interventions in this area before, (
 
 * Despite having designed in the past, I learned more and got more out of the design experience **by sticking to the process and not skipping steps**.
 
-* Why the paper prototype was extremely crucial to our process was because the simulation of a tricky technological feature through these quick prototypes was enough to provoke security and ethical concerns.
+* Why the paper prototype was extremely crucial to our process was because the simulation of a tricky technological feature through these quick prototypes was **enough to provoke security and ethical concerns**.
 
 * Visual design has an important role to play in the design of products where privacy may be an issue. This is one of the reasons why I feel I would be able to design better by grasping the full stack.
 

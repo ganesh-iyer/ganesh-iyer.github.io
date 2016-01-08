@@ -24,7 +24,6 @@ that enables a more efficient management of performances globally.
 
 **Platform:** Responsive web client.
 
-
 **Project Background:** Bach in the Subways is an international movement started in New York City by cellist Dale Henderson which sows the seeds for future generations of classical music lovers by generating public interest and excitement for the art form.
 
 Every year on March 21 (Johann Sebastian Bach’s birthday), musicians celebrate *Bach in the Subways Day* by offering free performances of Bach’s music in subways and public spaces around the world.
@@ -48,7 +47,7 @@ participants in self-organizing performances across the globe on that day.
 
 **Resonsibilities:**
 
-Through iterative sketches and high-fidelity mockups, I had worked with my UX colleague in New York to generate concepts. I was responsible for creating high-fidelity prototypes and sketching concepts that emerged from regular discussions with my UX colleague.
+Through iterative sketches and high-fidelity mockups, I had worked with my UX colleague in New York City to generate concepts. I was responsible for creating high-fidelity prototypes and sketching concepts that emerged from regular discussions with my UX colleague.
 
 
 ![Bach in the Subways - Home page as seen on the website]({{ site.baseurl}}/projects/bach/bach-home.png)
@@ -64,7 +63,7 @@ Through iterative sketches and high-fidelity mockups, I had worked with my UX co
 
 **Other Insights:**
 
-* The main challenge was to optimize the balance between participants choosing their performance slots (in terms of location and time) and the organizers/volunteers resolving conflicts. This was resolved by integrating online forms with a usable database. This solution was also proposed with the next few editions of the event in mind.
+* The main challenge was to **optimize the balance between control and freedom** - between participants choosing their performance slots (in terms of location and time) and the organizers/volunteers resolving conflicts. This was resolved by integrating online forms with a usable database. This solution was also proposed with the next few editions of the event in mind.
 
 * This project also greatly helped me to avoid overelaborating concepts while presenting them to clients.
 <br /><br />
