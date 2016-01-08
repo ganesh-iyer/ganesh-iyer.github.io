@@ -35,7 +35,7 @@ Screens where there is a green square to the bottom-right corner of the screen i
 
 **Project Background:**
 
-This non-curricular project was my first time working in the field of Usable Security.
+This non-curricular project was my first time working in the field of Usable Security. I took this up purely because I was convinced that it'll help expand my design understanding.
 
 The Tor Browser is a special software that directs internet traffic through a layered relay system to anonymize a user’s internet activity. The objective of Tor is to protect the personal privacy of users and their freedom to keeping communication confidential from spying parties.
 

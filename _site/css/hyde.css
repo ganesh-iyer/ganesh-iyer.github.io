@@ -1366,3 +1366,19 @@ h3.project-text {
 .figure-description {
   color: #666;
   font-size: 0.75rem; }
+
+.photo {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 60%; }
+
+.key-insight {
+  font-size: 1rem;
+  color: #0a202f;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; }
+
+h3.key-insight {
+  font-size: 1.25rem;
+  margin-bottom: 10px; }
