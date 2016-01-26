@@ -70,6 +70,14 @@ Employees (ESS)
 
 **Other Insights:** In addition to leading the design for the HR Admin team, I had to also establish consistency with the newer ESS and MSS teams. While the newer teams had greater flexibility in terms of design expression, straying away drastically from the design of our recent release was out of the question for us. The constant communication required to make design compromises was painstaking, but invaluable.
 <br /><br />
+
+**Product Owner Feedback:**
+
+> Ganesh's approach is iterative and methodic and was an excellent fit for our scrum team. He holds regular consultation with me, the architects, the development and the quality assessment team and is able to provide workarounds at short notice at every stage of the project.
+
+\- Vijaya Sarathi Durvasula, Product Director for SAP HCM.
+<br /><br />
+
 **Project Duration:** March 2012 to April 2013
 <br /><br />
 <br /><br />
