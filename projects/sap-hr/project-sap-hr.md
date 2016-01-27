@@ -41,7 +41,7 @@ Employees (ESS)
 **Fig:** Intermediate pencil sketches for the unique components of the new dashboard design.
 </span><br /><br />
 
-**Resonsibilities:**
+**Responsibilities:**
 
 * I had worked in close sync with an agile scrum development team to drive the entire UX process from ideation through paper sketches to high-fidelity mockups with UI specifications for each individual component of this dashboard.
 
