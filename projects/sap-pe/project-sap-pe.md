@@ -48,7 +48,7 @@ We had also performed a rigorous **design thinking process** wherein my teammate
 **Fig:** Current visualization for the Overdue Network Activities application. Visualization for desktop and tablets.
 </span><br /><br />
 
-**Resonsibilities:**
+**Responsibilities:**
 
 * Led detailed discussions with product owners where I interpreted verbal concepts and systems in the SAP-GUI into quick flow diagrams.
 

@@ -45,7 +45,7 @@ participants in self-organizing performances across the globe on that day.
 **Process:** To capture the essence of client requirements, the issues discussed were transferred immediately to paper in the form of sketches and the process was repeated a number of times. The quick nature of sketches also gave me freedom to superimpose newer concepts. Once there was a clear architectural idea for the website, I designed the mockups on *Adobe Illustrator* and also proposed concepts that could be used in future editions of *Bach in the Subways Day*.
 <br /><br />
 
-**Resonsibilities:**
+**Responsibilities:**
 
 Through iterative sketches and high-fidelity mockups, I had worked with my UX colleague in New York City to generate concepts. I was responsible for creating high-fidelity prototypes and sketching concepts that emerged from regular discussions with my UX colleague.
 

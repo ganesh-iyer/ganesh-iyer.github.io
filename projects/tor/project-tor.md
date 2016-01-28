@@ -57,7 +57,7 @@ Currently, the prototypes are being modified for another round of usability test
 </span><br /><br />
 
 
-**Resonsibilities:**
+**Responsibilities:**
 
 * I led the affinity diagramming process where the team transcribed screen recordings as well as moderator notes from the user tests onto sticky note clusters. The user tests were conducted solely by the PhD students.
 

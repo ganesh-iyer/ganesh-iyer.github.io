@@ -90,7 +90,7 @@ here
 <span class="fa fa-external-link no-underline"></span></a>.
 <br /><br />
 
-**Resonsibilities:**
+**Responsibilities:**
 
 * We had equally split the tasks of analyzing user surveys, literature reviews, conducting heuristic evaluations, iterative tests with the paper prototypes, task-based usage analysis and the tests with the eye movement recorder.
 
