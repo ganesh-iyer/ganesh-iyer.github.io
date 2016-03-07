@@ -59,6 +59,11 @@ We had also performed a rigorous **design thinking process** wherein my teammate
 **Fig:** Led the Design Thinking analysis of customer feedback that was compiled by the offshore team at client locations.
 </span><br /><br />
 
+![SAP Project Execution - Proof of Concept from Design Thinking]({{ site.baseurl}}/projects/sap-pe/sappe-poc.png)
+<span class = "figure-description">
+**Fig:** The Cause-and Effect visualization that I had designed as a proof-of-concept from the Design Thinking.
+</span><br /><br />
+
 * Being one of the early frontrunners in adhering to the newly accepted central UI design guidelines, my teammate and I formulated UI control requirements based on use-cases relevant to our set of applications. Through discussions, we had then **proposed UI solutions that could hold well in other sets of applications** that were looking to adhere to this evolving library.
 
 * Provided UI specs as well as tested the final implementations before every release.
