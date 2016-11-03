@@ -18,7 +18,10 @@ The field of security has an important overlap with behavioral economics. Our de
 <a href="https://www.torproject.org/projects/torbrowser.html.en" class="underlined-link" target= "blank">
 Tor Browser
 <span class="fa fa-external-link no-underline"></span></a>
-network settings.
+network settings. The project description can also be found on the
+<a href="https://trac.torproject.org/projects/tor/wiki/doc/TorLauncherUX2016" class="underlined-link" target= "blank">
+Tor website
+<span class="fa fa-external-link no-underline"></span></a>.
 
 **Platform:** Native PC (Windows and Mac) application.
 <br />
