@@ -7,8 +7,20 @@
   text-decoration: none;
   border: none;
 }
+.blue-bg{
+  // background-color: $navy-blue;
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#0a202f;
+  background-size:16px 16px;
+  height: 120px;
+  padding: 25px 0 25px 0;
+}
 .first-name{
-  color: $navy-blue;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: $h-logo;
 }
@@ -123,8 +135,9 @@ ul.selected-projects li img {
   opacity: 0.9;
 }
 ul.selected-projects li img:hover{
-  opacity: 0.3;
+  opacity: 0.25;
 }
+
 ul.selected-projects li h3 {
 	margin: 0 0 5px;
 }
@@ -182,8 +195,8 @@ h3.project-text{
   color: $red;
   //letter-spacing: -1px;
   background: rgb(255, 255, 255); /* fallback color */
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: #999999;
+  background: rgba(255, 255, 255, 0.8);
+  // border: #999999;
   padding: 10px;
 }
 .figure-description{

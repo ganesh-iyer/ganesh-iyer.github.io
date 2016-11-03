@@ -23,7 +23,7 @@ network settings.
 **Platform:** Native PC (Windows and Mac) application.
 <br />
 
-**Current Prototype:** You can find the current prototype
+**Working Prototype:** You can find the last updated prototype
 <a href="https://marvelapp.com/15a2294" class="underlined-link" target= "blank">
 here
 <span class="fa fa-external-link no-underline"></span></a>. <br />
@@ -34,6 +34,11 @@ Screens where there is a green square to the bottom-right corner of the screen i
 <span class = "figure-description">
 **Fig:** Brainstorming ideas for various interactions within the configuration flow.
 </span><br /><br />
+
+**Published Paper:** A published project report can be found
+<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-58.html" class="underlined-link" target= "blank">
+here
+<span class="fa fa-external-link no-underline"></span></a>. <br />
 
 **Project Background:** This non-curricular project was my first time working in the field of Usable Security. I took this up purely because I was convinced that it'll help expand my design understanding.
 
@@ -71,6 +76,6 @@ Currently, the prototypes are being modified for another round of usability test
 * Balancing effort and reward at every step **to evoke an experience of layered security** as opposed to just a smooth, pleasing experience had an important influence on our design decisions.
 
 <br /><br />
-**Project Duration:** October 2015 to *present*
+**Project Duration:** October 2015 to December 2015
 <br /><br />
 <br /><br />
