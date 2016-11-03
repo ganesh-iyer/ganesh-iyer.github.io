@@ -7,7 +7,7 @@ permalink: /projects/tennis/
 
 <div class = "key-insight">
 <h3 class = "key-insight">Key Insight</h3>
-An effective way to come up with innovative visualizations is to sketch visual elements on paper, mock them up on a software like Sketch or Illustrator recreating different data scenarios and then iteratively testing them. In my internship later that summer, I reused this approach to good effect.
+An effective way to come up with innovative visualizations is to sketch visual elements on paper, mock them up on a software like Sketch or Illustrator recreating different data scenarios and then iteratively testing them. In my internship later that summer, I reused this approach even under different constraints to good effect.
 </div>
 <br />
 
