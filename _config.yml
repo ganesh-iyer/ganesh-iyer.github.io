@@ -4,7 +4,7 @@ email:       ganesh.v@berkeley.edu
 author:      Ganesh V Iyer
 description: "Product Designer with 5+ years of experience studying HCI and Data Visualization at UC Berkeley."
 baseurl:     ""
-url:         "https://www.ganeshviswanathan.com"
+url:         "http://www.ganeshviswanathan.com"
 date_format: "%b %-d, %Y"
 
 port: 4000
