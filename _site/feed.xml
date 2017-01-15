@@ -3,8 +3,8 @@
   <channel>
     <title>Ganesh V Iyer | Product Designer</title>
     <description>Product Designer with 5+ years of experience studying HCI at UC Berkeley.</description>
-    <link>http://www.ganeshviswanathan.com/</link>
-    <atom:link href="http://www.ganeshviswanathan.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

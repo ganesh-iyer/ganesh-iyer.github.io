@@ -1,19 +1,18 @@
 # Site settings
 title:       Ganesh V Iyer | Product Designer
-email:       info@ganeshviswanathan.com
+email:       ganesh.v@berkeley.edu
 author:      Ganesh V Iyer
-description: "Product Designer with 5+ years of experience studying HCI at UC Berkeley."
+description: "Product Designer with 5+ years of experience studying HCI and Data Visualization at UC Berkeley."
 baseurl:     ""
-url:         "http://www.ganeshviswanathan.com"
+url:         "https://www.ganeshviswanathan.com"
 date_format: "%b %-d, %Y"
 
 port: 4000
 
 # Personal Profile
 first-name: Ganesh
-middle-name: Viswanathan
 last-name: Iyer
-intro: "5 years of UX Design"
+intro: "5+ years of Professional UX Design Experience"
 headline-1: "Through a user-centered design process, I strive to design products that constrain and free the user in "
 headline-2: " the right places."
 sub-headline: 'I have also worked as a journalist and am an active, performing musician.'
