@@ -11,6 +11,7 @@ port: 4000
 
 # Personal Profile
 first-name: Ganesh
+middle-name: Viswanathan
 last-name: Iyer
 intro: "5+ years of Professional UX Design Experience"
 headline-1: "Through a user-centered design process, I strive to design products that constrain and free the user in "
