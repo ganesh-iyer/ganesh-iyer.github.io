@@ -1,0 +1,548 @@
+// Sticky Header with logo
+.site-nav
+	z-index: index($elements, site-nav)
+	+outer-container
+	+clearfix
+	.logo-alt
+		position: absolute
+		bottom: $atom-spacing*2
+		z-index: index($elements, logo-alt)
+		height: $atom-spacing*6
+		+span-columns(1)
+		opacity: 0
+		// you need a width parameter or this won't work
+		background: url(../img/logoalt.svg) no-repeat
+	nav
+		+outer-container
+		width: 100%
+		z-index: index($elements, nav)
+		position: absolute
+		bottom: 0
+		display: flex
+		justify-content: flex-end
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+			// margin-right: -$atom-spacing*5
+			li
+				float: left
+				margin-right: $atom-spacing*5
+				text-transform: uppercase
+				color: $portia-light
+				line-height: $atom-spacing*10
+.fixed
+	position: fixed
+	top: 0
+	right: 0
+	background: $shylock-dark
+	width: 100%
+	border-bottom: 1px solid $portia-light
+.nav-inner
+	max-width: $max-width
+	margin: 0 auto
+	display: flex
+	justify-content: flex-end
+	+outer-container
+
+
+
+
+// Sticky header that worked previously
+// Navigation
+.site-nav
+	z-index: index($elements, site-nav)
+	+outer-container
+	+clearfix
+	.logo-alt
+		opacity: 0
+		background: url(../img/logoalt.svg) no-repeat
+		height: 40px
+		+span-columns(2)
+		position: absolute
+		bottom: 16px
+		z-index: index($elements, logo-alt)
+	nav
+		+outer-container
+		width: 100%
+		z-index: index($elements, nav)
+		position: absolute
+		bottom: 0
+		color: $portia-light
+		text-transform: uppercase
+		padding: auto
+		display: flex
+		justify-content: flex-end
+		ul
+			margin: 0
+			padding: 0
+			list-style: none
+			display: inline-block
+			li
+				float: left
+				margin-right: ($atom-spacing * 4)
+				line-height: 72px
+.nav-inner
+	max-width: $max-width
+	margin: 0 auto
+	display: flex
+	justify-content: flex-end
+	+outer-container
+
+// For fixing the navigation
+.fixed-logo
+	position: fixed
+	top: 16px
+.fixed
+	position: fixed
+	top: 0
+	right: 0
+	background: $shylock-dark
+	width: 100%
+	border-bottom: 0.05px solid $portia-light
+
+
+
+	// &:before
+	// 	z-index: index($elements, projects-wrap)
+	// 	content: ''
+	// 	position: absolute
+	// 	left: 0
+	// 	top: -25.143px - $atom-spacing*10
+	// 	// top looks like tan(angle) of the height and then divide by 2
+	// 	// determine top using jQuery
+	// 	width: 100%
+	// 	height: 1520px
+	// 	background: $portia-light
+	// 	+transform(skew(0,-2deg))
+	// 	+backface-visibility(hidden)
+	// 	+box-shadow(0, 0, $atom-spacing*2, $black)
+
+// New approach - skew container and then reverse-skew content
+
+// .projects-wrap
+// 	background: $shylock-dark
+// 	+transform(skew(0, -2deg))
+// 	+clearfix
+// 	padding: $atom-spacing*5 0
+// 	margin-top: -$atom-spacing*15
+// 	+box-shadow(0, 0, $atom-spacing*2, $black)
+// 	z-index: index($elements, projects-wrap)
+
+// .about-wrap
+// 	background: $portia-light
+// 	+transform(skew(0,2deg))
+// 	padding: $atom-spacing*5 0
+// 	margin-top: -$atom-spacing*8
+// 	+box-shadow(0, 0, $atom-spacing*2, $white)
+// 	z-index: index($elements, about-wrap)
+//
+
+
+// .about-wrap
+// 	@extend .projects-wrap
+// 	background: $portia-light
+// 	&:before
+// 		z-index: index($elements, about-wrap)
+// 		top: -100vh
+// 		height: 272vh
+// 		background: $portia-light
+// 		+transform(skew(0, 2deg))
+// 		+box-shadow(0, 0, $atom-spacing*0.5, $black)
+// .about
+// 	@extend .projects
+// 	color: $shylock-dark
+// .skill
+// 	@extend .project
+// 	z-index: index($elements, skill)
+//
+// .contacts
+// 	@extend .projects
+// 	color: $bassanio-blue
+// .contact
+// 	@extend .project
+// 	z-index: index($elements, contact)
+// 	background: $bassanio-blue
+
+
+// .projects-wrap:before
+// 	content: ''
+// 	background: $shylock-dark
+// 	height: 100vh
+// 	position: absolute
+// 	z-index: index($elements, projects-wrap)
+// 	top: 80vh
+// 	left: 0
+// 	width: 100%
+// 	+transform(skew(0, -10deg))
+// 	+box-shadow(1px, -3px, 16px, rgba(0, 0, 0, 0.8))
+// 	overflow: visible
+// 	backface-visibility: initial
+
+// .projects, .about, .contacts
+// 	margin-bottom: 40px
+// 	color: $antonio-red
+// 	+clearfix
+// 	+outer-container
+// 	z-index: index($elements, projects)
+//
+// .project, .skill, .contact
+// 	background: $antonio-red
+// 	+span-columns(8)
+// 	height: 400px
+// 	margin-bottom: $atom-spacing*3
+// 	z-index: index($elements, project)
+
+// Alternative where you skew the wrapper and reverse-skew the content
+
+// 26th January spares
+// .projects-wrap.special
+// 	&::before
+// 		z-index: index($elements, projects-wrap)
+// 		content: ''
+// 		position: absolute
+// 		left: 0
+// 		// top and height are dummy values till jQuery fixes them
+// 		top: 0px
+// 		height: 1px
+// 		width: 100%
+// 		background: $shylock-dark
+// 		+transform(skew(0,-2.5deg))
+// 		+backface-visibility(hidden)
+// 		+box-shadow(0, 0, $atom-spacing, $black)
+// About
+// .about-wrap
+// 	background: $bassanio-blue
+// 	position: relative
+// 	margin-top: $atom-spacing*10
+// 	.about
+// 		+outer-container
+// 		+clearfix
+// 		position: relative
+// 		color: #eea849
+// 		z-index: index($elements, about)
+// 		padding: $atom-spacing*12 0 $atom-spacing*10 0
+.about-wrap.special
+	&::before
+		z-index: index($elements, about-wrap)
+		content: ''
+		position: absolute
+		left: 0
+		top: 0px
+		height: 1px
+		width: 100%
+		background: $bassanio-blue
+		+transform(skew(0, 2.5deg))
+		+backface-visibility(hidden)
+		+box-shadow(0, 0, $atom-spacing*2, $black)
+
+// replaced svgs with png so had to dump the previous projects out
+				// .project
+				// 	+outer-container
+				// 	z-index: index($elements, project)
+				// 	+clearfix
+				// 	+bp-baby-bear
+				// 		display: block
+				// 	+bp-mama-bear
+				// 		display: block
+				// 	+bp-papa-bear-and-above
+				// 		display: flex
+				// 		flex-direction: row
+				// 	.project-img
+				// 		display: block
+				// 		margin: 0
+				// 		padding: 0
+				// 		vertical-align: top
+				// 		+bp-baby-bear
+				// 			+span-columns(12)
+				// 			margin: 0 auto $atom-spacing*4 auto
+				// 		+bp-mama-bear
+				// 			margin: 0 auto $atom-spacing*4 auto
+				// 			+span-columns(10)
+				// 			+shift(1)
+				// 		+bp-papa-bear
+				// 			// max-height: 56vh
+				//
+				//
+				// 		+bp-monster-bear
+				// 			// max-height: 56vh
+				// 			+span-columns(7)
+				// 		+bp-gargantuan
+				// 			// max-height: 56vh
+				// 			+span-columns(7)
+				// 	.project-text
+				// 		max-height: 100%
+				// 		padding: 0 $atom-spacing*2
+				// 		+bp-baby-bear
+				// 			+span-columns(12)
+				// 		+bp-mama-bear
+				// 			+span-columns(12)
+				// 		+bp-papa-bear
+				// 			+span-columns(5)
+				// 		+bp-monster-bear
+				// 			+span-columns(5)
+				// 		+bp-gargantuan
+				// 			+span-columns(5)
+				// 		h2.item-header
+				// 			margin: 0
+				// 			padding: 0
+				// 		.project-button
+				// 			display: block
+				// 			+button-general
+				// 			color: $project-bg
+				// 			background: $project-text
+
+// .stage-wrap > .stage > .intro-img, (intro-text > project-heading
+// .stage-wrap
+// 	background-color: #333333
+// 	color: $dark-solid-bg
+// 	padding-top: $atom-spacing*10
+// 	.stage
+// 		+outer-container
+// 		+clearfix
+// 		padding: $atom-spacing*4 0
+// 		a
+// 			color: darken($intro-link, 10%)
+// 			border-bottom: 1px dotted $intro-link
+// 			font-style: normal
+// 			cursor: pointer
+// 		p
+// 			margin: $atom-spacing*2 0
+// 		.project-field, .project-special
+// 			text-transform: uppercase
+// 			font-weight: bold
+// 		.project-field
+// 			color: darken($contact-link, 10%)
+// 		.project-special
+// 			color: $button-primary
+// 		ul.project-skills
+// 			margin-top: -$atom-spacing*2
+// 		.intro-img
+// 			+bp-baby-bear
+// 				+span-columns(10)
+// 				+shift(1)
+// 			+bp-mama-bear
+// 				+span-columns(10)
+// 				+shift(1)
+// 			+bp-parent-bears
+// 				+span-columns(7)
+// 			img
+// 				display: block
+// 				width: 100%
+// 				height: auto
+// 		.intro-text
+// 			.project-heading
+// 				font-size: 1.5em
+// 			+bp-baby-bear
+// 				+span-columns(10)
+// 				+shift(1)
+// 			+bp-mama-bear
+// 				+span-columns(10)
+// 				+shift(1)
+// 			+bp-parent-bears
+// 				+span-columns(5)
+			// +bp-parent-bears
+			// 	+span-columns(8)
+			// 	+shift(2)
+			// 	padding: 0
+
+// .stage-wrap
+// 	background: $text-color
+// 	.stage
+// 		+outer-container
+// 		+clearfix
+// 		color: $dark-solid-bg
+// 		.intro-img
+// 			+span-columns(8)
+// 			+shift(2)
+// 			+bp-parent-bears
+// 				+span-columns(7)
+// 			img
+// 				width: 100%
+// 				display: block
+// 				height: auto
+// 		.intro-text
+// 			+span-columns(10)
+// 			+shift(1)
+// 			+bp-parent-bears
+// 				+span-columns(5)
+// 			.project-heading
+// 				font-size: 1.5em
+
+
+// project-section-wrap > project-section > project-section-heading, (project-section-text > key-term), (project-section-img > iframe, img), (project-section-img-2 > (img2 > iframe, img))
+
+.stage-wrap
+	background: $text-color
+	padding-top: $atom-spacing*10
+	// that is for the header but you still would need to add padding.
+	color: $dark-solid-bg
+	.baby-hide
+		+bp-baby-bear
+			display: none
+			width: 0
+			height: 0
+		+bp-mama-bear
+			display: none
+			width: 0
+			height: 0
+	.stage
+		box-sizing: border-box
+		padding: $atom-spacing*4 0
+		+outer-container
+		+clearfix
+		.stage-img
+			+bp-baby-bear
+				+span-columns(8)
+				+shift(2)
+				padding: $atom-spacing 0
+			+bp-mama-bear
+				+span-columns(8)
+				+shift(2)
+				padding: $atom-spacing 0
+			+bp-parent-bears
+				+span-columns(6)
+			img
+				width: 100%
+				height: auto
+				display: block
+		.stage-text
+			+bp-baby-bear
+				+span-columns(10)
+				+shift(1)
+			+bp-mama-bear
+				+span-columns(10)
+				+shift(1)
+			+bp-parent-bears
+				+span-columns(6)
+			.stage-heading
+				font-size: 1.5em
+			.project-field
+				text-transform: uppercase
+				font-weight: bold
+				color: darken($contact-link, 10%)
+			.project-special
+				color: darken($button-primary, 10%)
+			p
+				margin: $atom-spacing*2 0
+			a
+				color: darken($intro-link, 10%)
+				border-bottom: 1px dotted darken($intro-link, 10%)
+
+			// ul
+			// 	margin-top: -$atom-spacing*2
+
+// .project-section-wrap
+// 	padding: $atom-spacing*4 0
+// 	+bp-parent-bears
+// 		margin: 0
+// 	a
+// 		color: darken($intro-link, 10%)
+// 		border-bottom: 1px dotted $intro-link
+// 		font-style: normal
+// 	p.testimonial-author, p.image-desc
+// 		font-size: 0.9em
+// 		font-style: italic
+// 	background-color: $contact-bg
+// 	.project-section
+// 		padding-top: $atom-spacing*5
+// 		+outer-container
+// 	.project-section-heading
+// 		+span-columns(12)
+// 		padding: 0 $atom-spacing*2
+// 		+bp-parent-bears
+// 			+span-columns(10)
+// 			+shift(2)
+// 		h2
+// 			text-transform: uppercase
+// 			font-weight: bold
+// 			color: $headline
+// 			font-size: 1.2em
+// 	.project-section-img
+// 		border-radius: $atom-spacing
+// 		overflow: hidden
+// 		+span-columns(12)
+// 		padding: 0 $atom-spacing*2
+// 		margin: $atom-spacing*4 0
+// 		+bp-parent-bears
+// 			+span-columns(8)
+// 			+shift(2)
+// 		iframe, img
+// 			width: 100%
+// 			margin: 0 auto
+// 			display: block
+// 	.project-section-img-2
+// 		margin-top: $atom-spacing*2
+// 		+span-columns(12)
+// 		padding: 0 $atom-spacing*2
+// 		+bp-parent-bears
+// 			+span-columns(8)
+// 			+shift(2)
+// 		.img-2
+// 			border-radius: $atom-spacing*0.5
+// 			overflow: hidden
+// 			+span-columns(12)
+// 			margin: $atom-spacing*4 0
+// 			+bp-parent-bears
+// 				+span-columns(6)
+// 			iframe
+// 				+bp-parent-bears
+// 					max-height: 250px
+// 				max-height: 480px
+// 			iframe, img
+// 				width: 100%
+// 				margin: 0 auto
+// 				display: block
+// 	.project-section-text
+// 		+span-columns(12)
+// 		padding: 0 $atom-spacing*2
+// 		+bp-parent-bears
+// 			+span-columns(8)
+// 			+shift(2)
+
+
+// .stage-wrap
+// 	background: $text-color
+// 	color: $dark-solid-bg
+// .stage-section
+// 	+outer-container
+// 	+clearfix
+// 	padding: $atom-spacing*4 0
+// .stage-text
+// 	+bp-baby-bear
+// 		+span-columns(10)
+// 		+shift(1)
+// 	+bp-mama-bear
+// 		+span-columns(10)
+// 		+shift(1)
+// 	+bp-parent-bears
+// 		+span-columns(6)
+// 	.stage-heading
+// 		font-size: 1.5em
+// 	p
+// 		margin: $atom-spacing*2 0
+// 		.project-field
+// 			text-transform: uppercase
+// 			color: darken($contact-link, 10%)
+// 			font-weight: bold
+// 		.project-special
+// 			font-weight: bold
+// 			color: darken($button-primary, 10%)
+// 	a
+// 		color: darken($intro-link, 10%)
+// 		border-bottom: 1px dotted darken($intro-link, 10%)
+// .stage-img
+// 	+bp-baby-bear
+// 		+span-columns(10)
+// 		+shift(1)
+// 	+bp-mama-bear
+// 		+span-columns(10)
+// 		+shift(1)
+// 	+bp-parent-bears
+// 		+span-columns(6)
+// 	img
+// 		width: 100%
+// 		height: auto
+// 		display: block
+// .under-head
+// 	padding-top: $atom-spacing*14

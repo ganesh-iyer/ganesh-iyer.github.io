@@ -1,0 +1,30 @@
+<div class = "contact-wrap">
+  <div class = "contact" id = "contact">
+      <h1 class = "section-header">Contact</h1>
+      <div class = "contact-left">
+        <div class = "headshot">
+          <img src = "../img/head.png" />
+        </div>
+        <div class = "contact-note">
+          <p><span class = "bio-key">N.B.</span> I'm currently on the lookout for full-time Product Design opportunities. The earliest I can start any new role is May 2017.</p>
+          <p>I'm also open to relocating globally. I'm presently located in SF Bay Area and if you are too, I can meet you given adequate notice.</p>
+          <p>While I'm comfortable working remotely, I prefer working in-person.</p>
+          <p>I look forward to talking to you!</p>
+        </div>
+      </div>
+      <div class = "contact-form">
+        <form action="https://formspree.io/{{ site.email }}" method="POST" class="form-stacked">
+          <label for="formName">Your name</label>
+          <input type="text" id = "formName" name="name" class="field-light">
+          <label for="formEmail">Your email address</label>
+          <input type="email" id = "formEmail" name="email" class="field-light">
+          <label for="formMessage">Your message</label>
+          <textarea type="text" id = "formMessage" name="message" class="field-light" rows="5" placeholder="What would you like to say? :-)"></textarea>
+          <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
+          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="submit" class="button button-blue button-big mobile-block" value="Send Message">
+        </form>
+      </div>
+  </div>
+</div>

@@ -1,76 +1,24 @@
 # Site settings
-title:       Ganesh V Iyer | Product Designer
-email:       ganesh.v@berkeley.edu
-author:      Ganesh V Iyer
-description: "Product Designer with 5+ years of experience studying HCI and Data Visualization at UC Berkeley."
-baseurl:     ""
-url:         "http://www.ganeshviswanathan.com"
-date_format: "%b %-d, %Y"
+title: Ganesh Iyer | Product Designer, UX
+tagline: "Persuasion over persistence"
+# url: "https://www.ganeshviswanathan.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+# baseurl: 
+# Social
+twitter: iyerport
+github: ganesh-iyer
+behance: iyerport
+medium: iyerport
+linkedin: ganeshiyerv
+angel: ganeshiyerv
+berkeley: ganesh.v
+university: ganesh-viswanathan-iyer
 
-port: 4000
+# Contact
+email: "ganesh.v@berkeley.edu" # This is my real email address. Please don't email me.
 
-# Personal Profile
-first-name: Ganesh
-middle-name: Viswanathan
-last-name: Iyer
-intro: "5+ years of Professional UX Design Experience"
-headline-1: "Through a user-centered design process, I strive to design products that constrain and free the user in "
-headline-2: " the right places."
-sub-headline: 'I have also worked as a journalist and am an active, performing musician.'
-# Google services
-google_analytics: 'UA-72219075-1'
-google_verification:
-
-# Optional features
-animated:             false
-show_related_posts:   false
-show_post_footers:    false
-show_social_icons:    true
-ajaxify_contact_form: false
-
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
-
-# Facebook Comments plugin
-# (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
-facebook_appid:
-facebook_comments_number: 10
-
-# Social icons
-github_username:
-bitbucket_username:
-stackoverflow_id:
-twitter_username: iyerport
-google_plus_id:
-linkedin_username: ganeshiyerv
-angellist_username: ganeshiyerv
-soundcloud_username: iyerport
-medium_id:
-bitcoin_url:
-paypal_url:
-flattr_button:
-
-# Post sharing icons
-show_sharing_icons: false
-share_text: 'Share this post!'
-# Change to 'true' to enable individual icons
-share_facebook: true
-share_twitter: true
-share_googleplus: false
-share_linkedin: true
-share_digg: true
-share_tumblr: true
-share_reddit: true
-share_stumbleupon: true
-share_hackernews: false
-
-# Build settings
-markdown:     kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    /:title/
-# paginate:     4
+# Use this for production
 sass:
-  compressed: true
+   sass_dir: _sass
+   style: compressed
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

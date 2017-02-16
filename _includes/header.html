@@ -1,15 +1,28 @@
-<header class="site-header px2 px-responsive blue-bg">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <div id = "logo">
-      <a href='{{ site.baseurl }}/' class='site-title'>
-        <span class = 'first-name'>{{site.first-name}}</span><span class = 'middle-name'>{{site.middle-name}}</span></span><span class = 'last-name'>{{site.last-name}}</span>
-      </a>
-      </div>
-      <nav class="site-nav">
-        {% include navigation.html %}
-      </nav>
-      <div class="clearfix"></div>
+<input id = "slide-menu-toggler" type = "checkbox" />
+<label for = "slide-menu-toggler" class = "hamburger"><i class="fa fa-bars fa-2x"></i></label>
+<div class = "slide-menu">
+  <a class = "ham-nav-link" href = "#top">
+    <div class = "ham-logo">
+        <img src = "../img/logo.png" />
     </div>
+  </a>
+  <nav>
+    <ul>
+      <a class = "ham-nav-link" href = "#work"><li>Selected Work</li></a>
+      <a class = "ham-nav-link" href = "#resume"><li>About</li></a>
+      <a class = "ham-nav-link" href = "#contact"><li>Contact</li></a>
+    </ul>
+  </nav>
+</div>
+<div class = "nav-wrap">
+  <div class = "nav" id = "papa-nav">
+    <a href = "#top"><div class = "logo"></div></a>
+    <nav>
+      <ul>
+        <li><a href = "#work">Selected Work</a></li>
+        <li><a href = "#resume">About</a></li>
+        <li><a href = "#contact">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-</header>
+</div>
