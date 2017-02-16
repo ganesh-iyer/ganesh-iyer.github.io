@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 
   // This is for the typed section on the landing area
   $(".typed").typed({
-        strings: ["I am a self-taught front-end developer. Thanks internet! =]",
+        strings: ["I have been teaching myself front-end web development for the last 1.5 years. Thanks internet! =]",
         "At present, I'm in my final semester of grad school studying HCI and Data Visualization at UC Berkeley.",
         "Recently, I learned to sing in overtones - two notes at the same time!",
         "I speak 7 languages, half of them half as fluently as the other.",
