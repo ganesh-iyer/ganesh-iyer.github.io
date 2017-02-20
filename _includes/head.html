@@ -5,7 +5,11 @@
 
 	<!-- Plain Description -->
 	<title>{{ page.title }}</title>
-	<meta name="description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
+	<meta name="description" property = "og:description" content="{% if page.excerpt %}{{page.excerpt}}{% else %}{{site.tagline}}{% endif %}">
+	<meta property="og:url" content="{{ page.url }}" />
+	<meta property="og:type" content="profile" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:image" content="{{ site.baseurl }}/thumbnail.png" />
 	<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 
 	<!-- CSS, JS & fonts -->
