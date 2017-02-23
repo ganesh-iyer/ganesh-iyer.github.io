@@ -104,10 +104,10 @@ $elements: front, intro-wrapper, profile, intro, contact-wrap, contact, resume-w
 
 @mixin appear-soft
 	opacity: 0
-	+transition(opacity 0.3s linear)
+	+transition(opacity 0.3s ease-in-out)
 	&.appear
 		opacity: 1
-		+transition(opacity 0.3s linear)
+		+transition(opacity 0.3s ease-in-out)
 // Global
 h1, h2, h3
 	margin: 0
@@ -801,12 +801,12 @@ body
 				right: 122%
 				text-align: right
 
-		.cssanimations &.is-hidden
-			visibility: hidden
+			.cssanimations &.is-hidden
+				visibility: hidden
 
-		.cssanimations &.bounce-in
-			visibility: visible
-			@include animation(cd-bounce-2 .6s)
+			.cssanimations &.bounce-in
+				visibility: visible
+				@include animation(cd-bounce-2 .6s)
 +bp-parent-bears
 	/* inverse bounce effect on even content blocks */
 	.cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in
