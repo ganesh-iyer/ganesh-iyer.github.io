@@ -60,7 +60,7 @@ jQuery(document).ready(function(){
     });
     moveInClass('.project');
     moveInClass('.skill');
-    moveInClass('.section-header');
+    // moveInClass('.section-header');
     // Parallax for the action shot
     // $('.profile').css({
     //   'transform' : 'translate(0px, -' + scrollPos/24 + '%)'
