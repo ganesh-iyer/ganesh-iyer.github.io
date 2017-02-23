@@ -6,8 +6,7 @@ jQuery(document).ready(function(){
   // onClick functions for the hamburger menu
   displayHamburgerMenu();
 
-  //
-
+  var animateTheseClasses = ['.section-header', '.project', '.skill'];
 
   // Scroll to point
    $('a[href*="#"]:not([href="#"])').click(function() {
@@ -16,7 +15,7 @@ jQuery(document).ready(function(){
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top - 120
+          scrollTop: target.offset().top - 96
         }, 1250);
         return false;
       }
@@ -55,40 +54,18 @@ jQuery(document).ready(function(){
 
   jQuery(window).scroll(function(){
     var scrollPos = jQuery(window).scrollTop();
-
-    // Logo microinteractions (parallax + linear fade)
-    // $('.logo').css({
-    //   'transform' : 'translate(0px, ' + scrollPos*2 + '%)'
-    // });
-    // $('.intro-wrapper').css({
-    //   'transform' : 'translate(0px, ' + scrollPos/36 + '%)'
-    // });
-    // $('.logo').css({
-    //   'opacity' :  (160-scrollPos)/160
-    // });
     var logoOpacity = opacityCeiling((4*scrollPos)/(viewPortWidth*3));
     $('.logo').css({
         'opacity' : logoOpacity
     });
-
+    moveInClass('.project');
+    moveInClass('.skill');
+    moveInClass('.section-header');
     // Parallax for the action shot
     // $('.profile').css({
     //   'transform' : 'translate(0px, -' + scrollPos/24 + '%)'
     // });
 
-
-    // Sticky Navigation
-  //   if (scrollPos >= navPos){
-  //     jQuery("nav").children().addClass("fixed");
-  //     jQuery(".logo-alt").removeClass(".logo-scroll-before");
-  //     jQuery(".logo-alt").addClass(".logo-scroll-after");
-  //   }
-  //   else{
-  //     jQuery("nav").children().removeClass("fixed");
-  //     jQuery(".logo-alt").removeClass(".logo-scroll-after");
-  //     jQuery(".logo-alt").addClass(".logo-scroll-before");
-  //   }
-  // });
 
     if (scrollPos >= (navPos)){
       jQuery(".nav-wrap").addClass("fixed");
@@ -134,5 +111,19 @@ function doThisOnResize(){
 function displayHamburgerMenu(){
   $( ".ham-nav-link" ).click(function() {
     $('#slide-menu-toggler').trigger('click');
+  });
+}
+
+function moveInClass(classToAnimate){
+  var scrollPos = jQuery(window).scrollTop();
+  var viewPortHeight = jQuery(window).height();
+  $(classToAnimate).each(function(){
+    if (scrollPos > $(this).offset().top - (9*viewPortHeight/10)){
+      $(this).addClass('appear');
+    }
+    else {
+      $(this).removeClass('appear');
+    };
+
   });
 }
