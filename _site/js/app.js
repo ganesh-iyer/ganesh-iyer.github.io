@@ -50,7 +50,6 @@ jQuery(document).ready(function(){
   // this is because :before and :after are not technically part of the dom
   // this needs to be done on load once
   // load should initialize a list of functions that will adjust heights and top-margins of the
-  // slanted divs - this is what you must figure out tonight
 
   jQuery(window).scroll(function(){
     var scrollPos = jQuery(window).scrollTop();
