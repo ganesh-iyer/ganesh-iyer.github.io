@@ -45,7 +45,8 @@ jQuery(document).ready(function(){
 
   jQuery(window).scroll(function(){
     var scrollPos = jQuery(window).scrollTop();
-    var logoOpacity = opacityCeiling((4*scrollPos)/(viewPortWidth*3));
+    var logoOpacity = opacityControl((4*scrollPos)/(viewPortWidth*3));
+    var introOpacity = opacityControl(1 - (scrollPos-200)*2/viewPortHeight);
     $('.logo').css({
         'opacity' : logoOpacity
     });
@@ -56,9 +57,12 @@ jQuery(document).ready(function(){
     }
     // moveInClass('.section-header');
     // Parallax for the action shot
-    // $('.profile').css({
-    //   'transform' : 'translate(0px, -' + scrollPos/24 + '%)'
-    // });
+    $('.intro').css({
+      'transform' : 'translate(0px, ' + scrollPos/16 + '%)'
+    });
+    $('.intro').css({
+      'opacity' : introOpacity
+    });
 
 
     if (scrollPos >= (navPos)){
@@ -93,13 +97,10 @@ jQuery(document).ready(function(){
 //   jQuery(skewedWrapper).toggleClass("special");
 // }
 
-function opacityCeiling(opacityMeasure){
-  if (opacityMeasure < 1) return opacityMeasure;
-  else return 1;
-}
-
-function doThisOnResize(){
-
+function opacityControl(opacityMeasure){
+  if (opacityMeasure < 1 && opacityMeasure >= 0) return opacityMeasure;
+  else if (opacityMeasure > 1) return 1;
+  else if (opacityMeasure < 0) return 0;
 }
 
 function displayHamburgerMenu(){

@@ -345,11 +345,15 @@ body
 	font-weight: bold
 .projects-wrap
 	margin-top: -$atom-spacing*15
+	+bp-baby-bear
+		margin-top: -$atom-spacing*8
+	+bp-mama-bear
+		margin-top: -$atom-spacing*8
 	// only for projects-wrap
 	+bp-baby-bear
-		padding: $atom-spacing*12 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
+		padding: $atom-spacing*10 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
 	+bp-mama-bear
-		padding: $atom-spacing*12 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
+		padding: $atom-spacing*10 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
 	padding: $atom-spacing*24 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
 	background: $project-bg
 	position: relative
@@ -397,6 +401,7 @@ body
 						box-sizing: border-box
 						+bp-papa-max
 							+span-columns(12)
+							margin-top: $atom-spacing*3
 						+bp-parent-bears
 							+span-columns(5)
 							padding: 0 $atom-spacing*2
@@ -414,6 +419,10 @@ body
 							+bp-beyond-papa
 								margin: $atom-spacing $atom-spacing*2 $atom-spacing*3 0
 .resume-wrap
+	+bp-baby-bear
+		margin-top: 0
+	+bp-mama-bear
+		margin-top: 0
 	margin-top: $atom-spacing*5
 	padding: $atom-spacing*8 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
 	background: $resume-bg
@@ -493,6 +502,10 @@ body
 				font-size: 1em
 			padding: $atom-spacing*2 0
 .contact-wrap
+	+bp-baby-bear
+		margin-top: 0
+	+bp-mama-bear
+		margin-top: 0
 	margin-top: $atom-spacing*5
 	padding: $atom-spacing*8 $atom-spacing*2 $atom-spacing*12 $atom-spacing*2
 	background: $contact-bg
