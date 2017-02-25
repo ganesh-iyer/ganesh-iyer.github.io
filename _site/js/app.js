@@ -3,6 +3,8 @@ jQuery(document).ready(function(){
   var viewPortHeight = jQuery(window).height();
   var navPos = jQuery("#papa-nav").offset().top;
 
+  jQuery(window).resize(allResizeFunctions());
+
   // onClick functions for the hamburger menu
   displayHamburgerMenu();
 
@@ -34,17 +36,12 @@ jQuery(document).ready(function(){
         typeSpeed: 0,
         startDelay: 1000,
         backDelay: 3000,
-        showCursor: false,
+        showCursor: true,
         loopCount: 10000,
         loop: true,
         typeSpeed: -2,
         shuffle: true
       });
-
-  // TODO: Write a function to resize your window each time some Curious Carl
-  // decides to check if you're being responsive
-    // TODO: Write a bundle of functions you want fired each time it resizes
-
   // to edit the before class what I need to do is to add a class that has the before property.
   // http://stackoverflow.com/questions/5814810/target-before-and-after-pseudo-elements-with-jquery
   // this is because :before and :after are not technically part of the dom
@@ -57,8 +54,11 @@ jQuery(document).ready(function(){
     $('.logo').css({
         'opacity' : logoOpacity
     });
-    moveInClass('.project');
-    moveInClass('.skill');
+
+    if (viewPortWidth > 767){
+      moveInClass('.project');
+      moveInClass('.skill');
+    }
     // moveInClass('.section-header');
     // Parallax for the action shot
     // $('.profile').css({
@@ -125,4 +125,9 @@ function moveInClass(classToAnimate){
     };
 
   });
+}
+
+function allResizeFunctions(){
+  var viewPortWidth = jQuery(window).width();
+  var viewPortHeight = jQuery(window).height();
 }

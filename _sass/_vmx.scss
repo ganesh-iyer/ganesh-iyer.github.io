@@ -190,3 +190,18 @@ $monster-bear: 1399px;
 @mixin border-radius($radius:.25em) {
   border-radius: $radius;
 }
+
+@mixin keyframes($name){
+	-webkit-keyframes $name {
+		@content;
+	}
+  @-moz-keyframes $name {
+		@content;
+	}
+  @-ms-keyframes $name {
+		@content;
+	}
+  @keyframes $name {
+		@content;
+	}
+}

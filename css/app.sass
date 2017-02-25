@@ -108,6 +108,7 @@ $elements: front, intro-wrapper, profile, intro, contact-wrap, contact, resume-w
 	&.appear
 		opacity: 1
 		+transition(opacity 0.5s ease-in-out)
+
 // Global
 h1, h2, h3
 	margin: 0
@@ -184,7 +185,7 @@ body
 				color: $headline
 			.de-emph-headline
 				-webkit-text-fill-color: rgba(lighten($headline, 10%), 0.15)
-		.typed
+		.typed-wrap
 			height: $atom-spacing*7
 			a
 				color: $intro-link
@@ -196,6 +197,19 @@ body
 				padding: 0 $atom-spacing*2
 			+bp-beyond-papa
 				margin: $atom-spacing*4 $atom-spacing*2 $atom-spacing*4 0
+.typed-cursor
+	margin-left: $atom-spacing*0.5
+	opacity: 1
+	color: $headline
+	animation: blink 0.7s infinite
+	+keyframes(blink)
+		0%
+			opacity: 1
+		50%
+			opacity: 0
+		100%
+			opacity: 1
+
 .profile
 	background-image: url(../img/profile2.png)
 	background-repeat: no-repeat
@@ -353,7 +367,8 @@ body
 			li
 				margin: $atom-spacing*8 0 $atom-spacing*12 0
 				.project
-					+move-in
+					+bp-parent-bears
+						+move-in
 					z-index: index($elements, project)
 					+clearfix
 					+bp-papa-max
@@ -380,7 +395,6 @@ body
 						box-sizing: border-box
 						+bp-papa-max
 							+span-columns(12)
-							margin-top: $atom-spacing*4
 						+bp-parent-bears
 							+span-columns(5)
 							padding: 0 $atom-spacing*2
@@ -398,7 +412,7 @@ body
 							+bp-beyond-papa
 								margin: $atom-spacing $atom-spacing*2 $atom-spacing*3 0
 .resume-wrap
-	margin-top: 0
+	margin-top: $atom-spacing*5
 	padding: $atom-spacing*8 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
 	background: $resume-bg
 	position: relative
@@ -453,7 +467,8 @@ body
 	margin: $atom-spacing*6 auto
 	+clearfix
 	.skill
-		+move-in
+		+bp-parent-bears
+			+move-in
 		+bp-baby-bear
 			+span-columns(12)
 			margin-bottom: $atom-spacing*6
@@ -476,7 +491,7 @@ body
 				font-size: 1em
 			padding: $atom-spacing*2 0
 .contact-wrap
-	margin-top: 0
+	margin-top: $atom-spacing*5
 	padding: $atom-spacing*8 $atom-spacing*2 $atom-spacing*12 $atom-spacing*2
 	background: $contact-bg
 	position: relative
@@ -499,7 +514,6 @@ body
 			+bp-parent-bears
 				+span-columns(6)
 			.headshot
-				height: $atom-spacing*36
 				+bp-baby-bear
 					margin-bottom: $atom-spacing*2
 				+bp-mama-bear
@@ -511,24 +525,24 @@ body
 				position: relative
 				img
 					+bp-baby-bear
-						width: 150%
+						width: 100%
 						height: auto
 						display: block
-						position: absolute
-						top: -$atom-spacing*5
-						left: -22%
+						// position: absolute
+						// top: -10%
+						// left: -40%
 					+bp-mama-bear
-						width: 150%
+						width: 100%
 						height: auto
 						display: block
-						position: absolute
-						top: -$atom-spacing*5
-						left: -22%
+						// position: absolute
+						// top: -12%
+						// left: -10%
 					width: 100%
 					height: auto
 					display: block
-					position: absolute
-					top: -$atom-spacing*5
+					// position: absolute
+					// top: -$atom-spacing*5
 			.contact-note
 				margin-top: 0
 		.contact-form
@@ -564,7 +578,7 @@ body
 				background-color: $button-primary
 				color: $text-color
 .footer-wrap
-	margin-top: $atom-spacing
+	margin-top: $atom-spacing*5
 	padding: $atom-spacing*8 $atom-spacing*2 $atom-spacing*4 $atom-spacing*2
 	position: relative
 	.footer
