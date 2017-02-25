@@ -117,6 +117,7 @@ p
 a
 	text-decoration: none
 body
+	background-color: $dark-solid-bg
 	background-image: url(../bg.png)
 	background-position: center
 	background-size: cover
@@ -284,7 +285,7 @@ body
 	margin: 0
 	width: 100%
 	box-sizing: border-box
-	background: $project-bg
+	// background: $project-bg
 	color: $nav-text
 	height: $atom-spacing*10
 	position: absolute
@@ -330,8 +331,9 @@ body
 // TODO: use the border mixin for browser compatibility
 .fixed
 	position: fixed
+	background: $project-bg
 	top: 0
-	border-bottom: 1px dotted rgba($text-color, 0.5)
+	border-bottom: 1px dashed rgba($nav-text, 0.5)
 	display: none
 	+bp-parent-bears
 		display: block
