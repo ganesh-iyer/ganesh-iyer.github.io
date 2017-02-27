@@ -302,9 +302,11 @@ body
 		.logo
 			opacity: 0
 			+span-columns(2)
-			background: url(../img/logo.svg) no-repeat
-			z-index: index($elements, logo)
+			background-image: url(../img/logo.png)
+			background-repeat: no-repeat
+			background-size: contain
 			height: $atom-spacing*6
+			z-index: index($elements, logo)
 			+bp-baby-bear
 				margin-left: $atom-spacing
 			+bp-mama-bear
@@ -1158,7 +1160,9 @@ body.project-body
 .misc-logo
 	opacity: 1
 	+span-columns(2)
-	background: url(../img/logo.svg) no-repeat
+	background-image: url(../img/logo.png)
+	background-repeat: no-repeat
+	background-size: contain
 	z-index: index($elements, logo)
 	height: $atom-spacing*6
 	+bp-baby-bear
