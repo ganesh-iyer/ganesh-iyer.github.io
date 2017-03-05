@@ -997,7 +997,7 @@ body
 		.project-section-img
 			border-radius: $atom-spacing*0.5
 			overflow: hidden
-			max-height: 88vh
+			max-height: 75vh
 			iframe, img
 				width: 100%
 				margin: 0 auto
@@ -1037,11 +1037,14 @@ body
 					display: block
 			.img-next
 				margin: $atom-spacing*3 0
-				+span-columns(6)
+				+span-columns(4)
 				img
 					width: 90%
 					display: block
 					height: auto
+			.text-next
+				margin: $atom-spacing*3 0
+				+span-columns(8)
 		.project-section-text
 			p.testimonial-author, p.image-desc, p.footnote
 				font-size: 0.9em
