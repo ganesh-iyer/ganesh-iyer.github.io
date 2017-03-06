@@ -3,11 +3,6 @@
 // vmx is where I store variables and mixins
 // Always clean your code before you go to bed.
 
-// TODO: Manipulate CSS for the cursor to appear (typed.js)
-// TODO: This needs manipulation so that:
-//			 a. The focused image (ideally the action shot) does the parallax (like Travis does)
-//       b. The background fills the entire screen
-
 // ----------------------------------------------------- //
 @import 'vmx'
 // New Material Colors - transfer to vmx after you confirm
@@ -998,6 +993,8 @@ body
 			border-radius: $atom-spacing*0.5
 			overflow: hidden
 			max-height: 75vh
+			.img-animation
+				width: 100%
 			iframe, img
 				width: 100%
 				margin: 0 auto
@@ -1176,3 +1173,20 @@ body.project-body
 		margin-left: $atom-spacing*2
 	+bp-monster-bear
 		margin-left: $atom-spacing*2
+@include keyframes(bounce)
+	0%, 20%, 50%, 80%, 100%
+		+transform(translateY(0))
+	40%
+		+transform(translateY(-$atom-spacing*3))
+	60%
+		+transform(translateY(-$atom-spacing*2))
+.arrow
+	cursor: pointer
+	position: fixed
+	bottom: 0
+	left: 50%
+	text-align: center
+	font-size: 1.2em
+	color: rgba($dark-solid-bg, 0.4)
+.bounce
+	+animation(bounce 2s infinite)

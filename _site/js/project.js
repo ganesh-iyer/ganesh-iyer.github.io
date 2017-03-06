@@ -1,13 +1,16 @@
 jQuery(document).ready(function(){
   var viewPortWidth = jQuery(window).width();
   var viewPortHeight = jQuery(window).height();
-  var totalDocHeight = jQuery('#footer').offset().top;
+  var totalDocHeight = jQuery(document).height();
+  var footerHeight = jQuery("#footer").height();
+  console.log(totalDocHeight);
   var numSection = $('.section').length;
 
   // Dynamically generate anchor list
   var sectionArray = new Array(numSection);
   sectionArray.fill("page");
   sectionArray[0] = "top";
+  sectionArray[1] = "brief";
   // var lastPos = jQuery("#last").offset().top;
   $('#fullpage').fullpage({
     css3: true,
@@ -42,7 +45,8 @@ jQuery(document).ready(function(){
 
   jQuery(window).scroll(function(){
     var scrollPos = jQuery(window).scrollTop();
-    var heightBarWidth = scrollPos*100/(totalDocHeight + 2*viewPortHeight);
+    console.log(scrollPos);
+    var heightBarWidth = scrollPos*100/(totalDocHeight-footerHeight);
     if(heightBarWidth >= 100){
       $('#height-bar').css("width", 100 + "%");
     }

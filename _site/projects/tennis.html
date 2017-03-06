@@ -83,13 +83,13 @@
           </p>
         </div>
       </div>
+      <a class = "arrow bounce" href = "#brief"><i class="fa fa-angle-double-down fa-lg"></i></a>
   </div>
   <div class = "section project-section-wrap fp-auto-height-responsive">
     <div class = "project-section">
       <div class = "project-section-heading"><h2>Problem Statement</h2></div>
       <div class = "project-section-text">
-        <p>While performance and betting data for Men’s tennis were readily available, we felt that <span class = "key-term">there were not enough visualizations bringing those two types of information together into a common narrative</span>.</p>
-        <p>Performance graphs were usually bar or line graphs tracking wins or changes in ranking over time - and these were the most straightforward and intuitive ways to represent such data. However, the data representing betting odds was not in a format that could be readily consumed by even a lay tennis enthusiast. For this purpose, I tried to sketch various combinations under the constraint of a single dataset.</p>
+        <p>Performance and betting data for Men’s tennis are readily available. But there were not enough visualizations bringing those two narratives together. Specifically, the <span class = "key-term">data representing betting odds was not in a format that could be readily consumed by even a lay tennis enthusiast</span>. For this purpose, I tried to sketch various combinations trying to bring those two narratives together.</p>
       </div>
       <div class = "project-section-img">
         <img src = "/projects/tennis/01.png" />
@@ -100,8 +100,7 @@
     <div class = "project-section">
       <div class = "project-section-heading"><h2>Approach</h2></div>
       <div class = "project-section-text">
-        <p>The betting data that we had was in the form of ratios relative to 1. These ratios were intentionally designed to indicate how much the placer of a bet would win or lose depending on the result. Higher ratios pointed to higher unlikelihood of the result. This model however, needed further cognitive processing for a non-expert in betting to understand who is more favored to win a particular match.</p>
-        <p>To do this, the design must consider what kind of information about the dataset should the visual representation answer. Hence, we transformed the cumbersome question ‘How much am I going to win if Player A wins?’ to ‘How much likely do bookies think Player A is going to win?’.</p>
+        <p>The betting data was in the form of ratios that indicate how much the better would win or lose depending on the result. Higher ratios pointed to more unlikely results. This needed further cognitive processing to understand who is more favored to win a particular match. The design must start from the <span class = "key-term">key question</span> that the narrative must answer. Hence, we transformed ‘How much am I going to win if Player A wins?’ to ‘How much likely do bookies think Player A is going to win?’.</p>
       </div>
       <div class = "project-section-img">
         <img src = "/projects/tennis/02.png" />
@@ -111,8 +110,8 @@
   <div class = "section project-section-wrap fp-auto-height-responsive">
     <div class = "project-section">
       <div class = "project-section-text">
-        <p>That reframing led to newer questions. Does winning favorability change with the type of playing surface? Is Federer expected to fare better on hard courts against Djokovic than he does in grass courts? Does the chosen player have an arch rival - one player they always struggle against? Is it possible to code an upset - the phenomenon that a player is expected to lose but still wins - through data?</p>
-        <p>My hypothesis through these questions was that if data for an entire match could be coded in a small and simple representation, it could then be reused for all matches and also progressively tell stories at other levels. Did the player defy all odds after suffering a horrendous injury in 2012? The key challenge here was to also convey both result and predicted result using this device. Reusability became key not just to represent matches but also prowess - unit charts should not only be used for matches but should also be summarized over matches.</p>
+        <p>This reframing led to newer questions. Does winning favorability change with the type of playing surface? Is Federer expected to fare better on hard courts against Djokovic than he does in grass courts? Does the chosen player have an arch rival - one player they always struggle against? Is it possible to code an upset - the phenomenon that a player is expected to lose but still wins - through data?</p>
+        <p>My hypothesis through these questions was that <span class = "key-term">if data for an entire match could be coded in a small and simple representation</span>, it could then be reused for all matches and also progressively tell stories at other levels. Did the player defy all odds after suffering a horrendous injury in 2012? The key challenge here was to also convey both result and predicted result using this device. Reusability became key not just to represent matches but also prowess across a time period!</p>
       </div>
       <div class = "project-section-img">
         <img src = "/projects/tennis/03.png" />
@@ -139,7 +138,7 @@
       </div>
 
       <div class = "project-section-img">
-          <div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="//streamable.com/e/686g5" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe><script async  src="//v.streamablemedia.com/v1/embed.js"></script></div>
+          <div class = "img-animation" style="height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="//streamable.com/e/686g5" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe><script async  src="//v.streamablemedia.com/v1/embed.js"></script></div>
       </div>
 
     </div>
@@ -177,9 +176,9 @@
     <div class = "project-section">
       <div class = "project-section-heading"><h2>Testing and Showcase Feedback</h2></div>
       <div class = "project-section-text">
-        <p>To evaluate if the unit chart was effective and efficient in representing percentage odds, I printed out multiple representations of the chart by varying their positions, stroke, transparency, color etc. I then tested each permutation with users and discovered that having the chance of winning for the player was more effective if the bars started from the bottom. When asked what could the colors at the bottom of the bar charts mean, 7 out of 10 users guessed the surface of the court.
+        <p>To evaluate the efficacy of the unit chart, I printed out multiple representations of the chart by varying positions, stroke, transparency, color etc. I then tested each permutation with users and discovered that having the chance of winning for the player was more effective if the bars started from the bottom. 7 out of 10 users guessed that the horizontal bar below the chart the surface of the court.
         </p>
-        <p>While testing our application in the project showcase, we found that as the odds for a player dropped in a particular tournament round, the user hovered over the chart curious to know what exactly happened. When we asked users about what they would like to see more, they said things along the lines of ‘Federer went out in the 3rd round of the Australian Open? That’s impossible! How did it happen?’.</p>
+        <p>During our showcase, we found that as the odds for a player dropped in a particular tournament round, the user hovered over the chart curious to know what exactly happened. When we asked users about what they would like to see more, they said things along the lines of ‘Federer went out in the 3rd round of the Australian Open? That’s impossible! How did it happen?’.</p>
       </div>
       <div class = "project-section-img">
           <img src = "/projects/tennis/09.png" />
